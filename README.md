@@ -1,12 +1,20 @@
-# React + Vite
+# AI-chat 🤖💬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-chat is a modern, responsive AI chatbot interface built with **HTML**, **CSS**, and **JavaScript**, designed for high performance and clean UI/UX. It simulates real-time AI interactions and delivers a smooth, intuitive user experience.
 
-Currently, two official plugins are available:
+## 🔧 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** (with JSX)
+- 🎨 **Tailwind CSS**
+- 🧠 **OpenAI API** *(optional future integration)*
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Live chat simulation with loading animation
+- Typing indicator and message timestamps
+- Minimalist, mobile-friendly layout
+- Clean codebase with reusable components
+
+## 🚧 Status
+
+> 🛠 In progress — actively being developed and improved
