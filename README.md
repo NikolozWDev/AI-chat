@@ -1,4 +1,5 @@
 # AI-chat 🤖💬
+Live link: https://nikolozwdev.github.io/AI-chat/
 
 AI-chat is a modern, responsive AI chatbot interface built with **HTML**, **CSS**, and **JavaScript**, designed for high performance and clean UI/UX. It simulates real-time AI interactions and delivers a smooth, intuitive user experience.
 
@@ -14,7 +15,3 @@ AI-chat is a modern, responsive AI chatbot interface built with **HTML**, **CSS*
 - Typing indicator and message timestamps
 - Minimalist, mobile-friendly layout
 - Clean codebase with reusable components
-
-## 🚧 Status
-
-> 🛠 In progress — actively being developed and improved

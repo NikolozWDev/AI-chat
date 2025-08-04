@@ -5,7 +5,7 @@ import Aichat from './pages/Aichat.jsx'
 const App = () => {
 
   return (
-    <Router>
+    <Router basename="/AI-chat">
       <Routes>
         <Route path="/" element={<Aichat />} />
       </Routes>
