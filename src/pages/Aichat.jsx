@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import ChatInput from '../components/Chatinput';
-import ChatMessages from '../components/Chatmessages';
+import React from 'react';
+import ChatInput from '../components/ChatInput';
+import ChatMessages from '../components/ChatMessages';
 
-const Aichat = () => {
+const AiChat = () => {
 
 
     const [chatMessages, setChatMessages] = React.useState([])
@@ -19,4 +19,4 @@ const Aichat = () => {
     )
 
 }
-export default Aichat;
+export default AiChat

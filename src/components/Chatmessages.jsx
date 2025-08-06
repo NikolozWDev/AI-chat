@@ -1,5 +1,5 @@
 import React from 'react';
-import ChatMessage from './Chatmessage';
+import ChatMessage from './ChatMessage';
 
 const ChatMessages = ({chatMessages}) => {
 
