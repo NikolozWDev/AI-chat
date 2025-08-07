@@ -1,7 +1,8 @@
 import React from 'react';
 import AiImage from '../assets/images/AI-chat.png';
+import dayjs from 'dayjs'
 
-const ChatMessage = ({message, sender}) => {
+const ChatMessage = ({message, sender, time}) => {
 
     return (
         <div className={`flex items-end gap-[4px] mt-[20px] w-full ${sender === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -18,6 +19,7 @@ const ChatMessage = ({message, sender}) => {
             }
         `}>
             <p className="break-words overflow-hidden">{message}</p>
+            <p className="text-white opacity-[0.8] text-[14px] italic">{dayjs(time).format('h:mma')}</p>
         </div>
 
         {sender === 'user' && 

@@ -24,7 +24,7 @@ const ChatMessages = ({chatMessages}) => {
         </p>
         ) : (
             chatMessages.map((chatMessage) => (
-            <ChatMessage message={chatMessage.message} sender={chatMessage.sender} key={chatMessage.id}/>
+            <ChatMessage message={chatMessage.message} sender={chatMessage.sender} time={chatMessage.time} key={chatMessage.id}/>
             ))
         )
       }

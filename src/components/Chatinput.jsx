@@ -1,5 +1,6 @@
 import React from 'react';
 import loadingSpinner from '../assets/images/loading-spinner.gif';
+import dayjs from 'dayjs'
 
 const ChatInput = ({chatMessages, setChatMessages}) => {
 
@@ -23,6 +24,7 @@ const ChatInput = ({chatMessages, setChatMessages}) => {
         {
             message: inputText,
             sender: 'user',
+            time: dayjs().valueOf(),
             id: crypto.randomUUID()
         }
         ]
@@ -43,10 +45,15 @@ const ChatInput = ({chatMessages, setChatMessages}) => {
         {
             message: response,
             sender: 'robot',
+            time: dayjs().valueOf(),
             id: crypto.randomUUID()
         }
     ])
         setIsLoading(false)
+    }
+    // clear message
+    function clearMessages() {
+        setChatMessages([])
     }
 
     function handleKey(event) {
@@ -76,8 +83,10 @@ const ChatInput = ({chatMessages, setChatMessages}) => {
             rows={1}
             className="flex-grow border border-black rounded-l-lg px-4 py-2 resize-none focus:outline-none"
             />
-            <button onClick={sendMessage} className="bg-gray-700 text-white rounded-tr-[16px] rounded-br-[16px] px-[10px] py-[5px]
-            border-[1px] border-black w-[60px] h-[42px]">Send</button>
+            <button onClick={sendMessage} className="bg-gray-700 text-white px-[10px] py-[5px]
+            border-[1px] border-black w-[60px] h-[42px] hover:opacity-[0.9] transition-all duration-[0.2s]">Send</button>
+            <button onClick={clearMessages} className="bg-gray-200 text-black rounded-tr-[16px] rounded-br-[16px] px-[10px] py-[5px]
+            border-[1px] border-gray-300 w-[60px] h-[42px] hover:opacity-[0.7] transition-all duration-[0.2s]">Clear</button>
             </div>
             <div className="bg-white w-[90%] nm:w-[850px]">
             <p className="flex flex-row justify-center items-center gap-[10px]">Created by <a href="https://github.com/NikolozWDev" target="_blank" className="flex flex-row justify-center items-center cursor-pointer text-blue-800 underline"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
